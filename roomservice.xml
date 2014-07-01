@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Senior Limpio -->
+  <remote name="origin"
+	   fetch="https://github.com/SeniorLimpio/" />
+
+  <!-- The Fusion-SP project -->
+  <remote name="fusion"
+           fetch="https://github.com/Fusion-SP/" />
+
+  <!-- SaberMod Toolchains -->
+  <remote name="saber"
+           fetch="https://bitbucket.org/Cl3Kener/" />
+
+  <!-- Linaro -->
+  <remote  name="ln"
+           fetch="git://android.git.linaro.org/" />
+
+<!-- Device dependencies -->
+  <project name="SlimRoms/device_samsung_i9300" path="device/samsung/i9300" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="kk4.4" />
+  <project name="SlimRoms/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="kk4.4" />
+  <remove-project name="SlimRoms/kernel_samsung_smdk4412" />
+  <project name="kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/device_samsung_smdk4412-common" />
+  <project name="device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/device_samsung_i9300" />
+  <project name="device_samsung_i9300" path="device/samsung/i9300" remote="origin" revision="kk4.4" />
+
+<!-- Boeffla Kernel -->
+  <project name="boeffla-kernel-omnirom-s3" path="kernel/samsung/boeffla" remote="origin" revision="boeffla" />
+
+<!-- Frameworks -->
+  <remove-project name="SlimRoms/frameworks_base" />
+  <project name="frameworks_base" path="frameworks/base" remote="origin" revision="kk2" />
+  <remove-project name="SlimRoms/frameworks_native" />
+  <project name="frameworks_native" path="frameworks/native" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/frameworks_av" />
+  <project name="frameworks_av" path="frameworks/av" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/frameworks_rs" />
+  <project path="frameworks/rs" name="frameworks_rs" remote="origin" revision="kk4.4" />
+  <remove-project name="platform/frameworks/ex" />
+  <project path="frameworks/ex" name="android_frameworks_ex" remote="origin" revision="cm-11.0" />
+  <remove-project name="platform/frameworks/wilhelm" />
+  <project path="frameworks/wilhelm" name="android_frameworks_wilhelm" remote="origin" revision="cm-11.0" />
+  <remove-project name="platform/frameworks/compile/slang" />
+  <project path="frameworks/compile/slang" name="android_frameworks_compile_slang" remote="origin" revision="cm-11.0" />
+  <remove-project name="platform/frameworks/opt/net/voip" />
+  <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="origin" revision="cm-11.0" />
+  <remove-project name="SlimRoms/frameworks_opt_cards" />
+  <project name="frameworks_opt_cards" path="frameworks/opt/cards" remote="origin" revision="kk4.4" />
+
+<!-- Apps -->
+  <remove-project name="SlimRoms/packages_apps_Settings" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="origin" revision="kitkat" />
+  <remove-project name="SlimRoms/packages_apps_DSPManager" />
+  <project name="packages_apps_DSPManager" path="packages/apps/DSPManager" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_Camera2" />
+  <project name="android_packages_apps_Camera2" path="packages/apps/Camera2" remote="origin" revision="cm-11.0" />
+  <remove-project name="SlimRoms/packages_apps_Dialer" />
+  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_InCallUI" />
+  <project name="packages_apps_InCallUI" path="packages/apps/InCallUI" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_Mms" />
+  <project name="packages_apps_Mms" path="packages/apps/Mms" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_Gallery2" />
+  <project name="packages_apps_Gallery2" path="packages/apps/Gallery2" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_ContactsCommon" />
+  <project name="packages_apps_ContactsCommon" path="packages/apps/ContactsCommon" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_Contacts" />
+  <project name="packages_apps_Contacts" path="packages/apps/Contacts" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_Calculator" />
+  <project name="packages_apps_Calculator" path="packages/apps/Calculator" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_apps_Browser" />
+  <project name="packages_apps_Browser" path="packages/apps/Browser" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_inputmethods_LatinIME" />
+  <project name="packages_inputmethods_LatinIME" path="packages/inputmethods/LatinIME" remote="origin" revision="kk4.4" />
+  <project name="android_packages_apps_ScreenRecorder" path="packages/apps/ScreenRecorder" remote="origin" revision="kitkat" />
+  <project name="packages_apps_KernelTweaker" path="packages/apps/KernelTweaker" remote="origin" revision="du44" />
+  <remove-project name="SlimRoms/packages_apps_Bluetooth" />
+  <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="origin" revision="kk4.4" />
+  <project name="CyanogenMod/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" remote="github" revision="cm-11.0" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+
+<!-- Services -->
+  <remove-project name="SlimRoms/packages_services_Telephony" />
+  <project name="packages_services_Telephony" path="packages/services/Telephony" remote="origin" revision="kk4.4" />
+
+<!-- Providers -->
+  <remove-project name="SlimRoms/packages_providers_MediaProvider" />
+  <project name="packages_providers_MediaProvider" path="packages/providers/MediaProvider" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_providers_ContactsProvider" />
+  <project name="packages_providers_ContactsProvider" path="packages/providers/ContactsProvider" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/packages_providers_DownloadProvider" />
+  <project name="packages_providers_DownloadProvider" path="packages/providers/DownloadProvider" remote="origin" revision="kk4.4" />
+
+<!-- Hardware -->
+<!--  <remove-project name="SlimRoms/hardware_qcom_audio" />
+  <project name="hardware_qcom_audio" path="hardware/qcom/audio" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/hardware_qcom_gps" />
+  <project name="hardware_qcom_gps" path="hardware/qcom/gps" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/hardware_qcom_media" />
+  <project name="hardware_qcom_media" path="hardware/qcom/media" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/hardware_qcom_display" />
+  <project name="hardware_qcom_display" path="hardware/qcom/display" remote="origin" revision="kk4.4" /> -->
+
+
+<!-- External -->
+  <remove-project name="SlimRoms/android_external_skia" />
+  <project name="android_external_skia" path="external/skia" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_external_e2fsprogs" />
+  <project name="android_external_e2fsprogs" path="external/e2fsprogs" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_external_llvm" />
+  <project path="external/llvm" name="android_external_llvm" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_external_clang" />
+  <project name="android_external_clang" path="external/clang" remote="origin" revision="kk4.4" />
+  <remove-project name="platform/external/oprofile" />
+  <project name="android_external_oprofile" path="external/oprofile" remote="origin" revision="cm-11.0" />
+  <remove-project name="SlimRoms/android_external_openssl" />
+  <project name="android_external_openssl" path="external/openssl" remote="origin" revision="cm-11.0" />
+  <remove-project name="platform/external/openssh" />
+  <project path="external/openssh" name="android_external_openssh" remote="origin" revision="cm-11.0" />
+  <remove-project name="platform/external/chromium" />
+<project path="external/chromium" name="android_external_chromium" remote="origin" revision="cm-11.0" />
+  <remove-project name="platform/external/stlport" />
+  <project path="external/stlport" name="android_external_stlport" remote="origin" revision="cm-11.0" />
+  <remove-project name="SlimRoms/android_external_bluetooth_bluedroid" />
+  <project name="android_external_bluetooth_bluedroid" path="external/bluetooth/bluedroid" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_external_fuse" />
+  <project name="android_external_fuse" path="external/fuse" remote="origin" revision="kk4.4" />
+  <remove-project name="platform/external/strace" />
+  <project name="CyanogenMod/android_external_strace" path="external/strace" remote="github" revision="cm-11.0" />
+  <remove-project name="platform/external/dnsmasq" />
+  <project name="android_external_dnsmasq" path="external/dnsmasq" remote="origin" revision="cm-11.0" />
+
+<!-- Platform -->
+  <remove-project name="SlimRoms/platform_libcore" />
+  <project name="platform_libcore" path="libcore" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_art" />
+  <project name="android_art" path="art" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_dalvik" />
+  <project name="android_dalvik" path="dalvik" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_build" />
+  <project name="android_build" path="build" remote="origin" revision="kk4.4" />
+  <remove-project name="platform/system/media" />
+  <project name="android_system_media" path="system/media" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_system_vold" />
+  <project name="android_system_vold" path="system/vold" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_system_core" />
+  <project name="android_system_core" path="system/core" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_system_extras" />
+  <project name="android_system_extras" path="system/extras" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/android_bionic" />
+  <project name="android_bionic" path="bionic" remote="origin" revision="kk4.4" />
+
+<!-- Vendor -->
+  <remove-project name="SlimRoms/vendor_slim" />
+  <project name="vendor_slim" path="vendor/slim" remote="origin" revision="kk4.4" />
+
+<!-- Build & Toolchains-->
+<!-- 4.8 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="UBERUTILS/arm-eabi-4.8" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="UBERUTILS/arm-linux-androideabi-4.8" remote="github" revision="master" />
+
+<!-- 4.9 -->
+  <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="UBERUTILS/arm-eabi-4.9" remote="github" revision="master" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9-sm" name="UBERUTILS/arm-linux-androideabi-4.9" remote="github" revision="master" />
+
+<!-- Theme engine -->
+  <project path="packages/apps/ThemeChooser" name="CyanogenMod/android_packages_apps_ThemeChooser" remote="github" revision="cm-11.0" />
+  <project path="packages/providers/ThemesProvider" name="CyanogenMod/android_packages_providers_ThemesProvider" remote="github" revision="cm-11.0" />
+
+<!-- Removed forks -->
+   <remove-project name="SlimRoms/packages_apps_SlimCenter" />
+
+  <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
+
+  </manifest>
