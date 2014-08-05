@@ -11,21 +11,21 @@
 
 <!-- Device dependencies -->
   <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="kk4.4" />
-  <project name="SlimRoms/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="kk4.4" />
+  <project name="temasek/proprietary_vendor_samsung" path="vendor/samsung" remote="github" revision="cm-11.0" />
   <project name="kernel_samsung_smdk4412" path="kernel/samsung/smdk4412" remote="origin" revision="kk4.4" />
   <project name="device_samsung_smdk4412-common" path="device/samsung/smdk4412-common" remote="origin" revision="kk4.4" />
   <project name="device_samsung_i9300" path="device/samsung/i9300" remote="origin" revision="kk4.4" />
 
 <!-- Frameworks -->
   <remove-project name="SlimRoms/frameworks_base" />
-  <project name="frameworks_base" path="frameworks/base" remote="origin" revision="kitkat" />
+  <project name="frameworks_base" path="frameworks/base" remote="origin" revision="kk3" />
   <remove-project name="SlimRoms/frameworks_native" />
   <project name="frameworks_native" path="frameworks/native" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/frameworks_av" />
   <project name="frameworks_av" path="frameworks/av" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/frameworks_rs" />
   <project path="frameworks/rs" name="frameworks_rs" remote="origin" revision="kk4.4" />
-  <remove-project name="platform/frameworks/ex" />
+  <remove-project name="SlimRoms/frameworks_ex" />
   <project path="frameworks/ex" name="android_frameworks_ex" remote="origin" revision="cm-11.0" />
   <remove-project name="platform/frameworks/wilhelm" />
   <project path="frameworks/wilhelm" name="android_frameworks_wilhelm" remote="origin" revision="cm-11.0" />
@@ -35,10 +35,12 @@
   <project path="frameworks/opt/net/voip" name="android_frameworks_opt_net_voip" remote="origin" revision="cm-11.0" />
   <remove-project name="SlimRoms/frameworks_opt_cards" />
   <project name="frameworks_opt_cards" path="frameworks/opt/cards" remote="origin" revision="kk4.4" />
+  <remove-project name="SlimRoms/frameworks_opt_telephony" />
+  <project name="LiquidSmooth/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="kitkat" />
 
 <!-- Apps -->
   <remove-project name="SlimRoms/packages_apps_Settings" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="origin" revision="kitkat" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="origin" revision="kk3" />
   <remove-project name="SlimRoms/packages_apps_DSPManager" />
   <project name="packages_apps_DSPManager" path="packages/apps/DSPManager" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/packages_apps_Camera2" />
@@ -92,7 +94,7 @@
 
 <!-- External -->
   <remove-project name="SlimRoms/android_external_skia" />
-  <project name="android_external_skia" path="external/skia" remote="origin" revision="kk4.4" />
+  <project name="CyanogenMod/android_external_skia" path="external/skia" remote="github" revision="cm-11.0" />
   <remove-project name="SlimRoms/android_external_e2fsprogs" />
   <project name="android_external_e2fsprogs" path="external/e2fsprogs" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/android_external_llvm" />
@@ -140,7 +142,7 @@
 
 <!-- Vendor -->
   <remove-project name="SlimRoms/vendor_slim" />
-  <project name="vendor_slim" path="vendor/slim" remote="origin" revision="kk4.4" />
+  <project name="vendor_ldroid" path="vendor/ldroid" remote="origin" revision="kk4.4" />
 
 <!-- Build & Toolchains-->
 <!-- 4.8 -->
@@ -158,7 +160,12 @@
 <!-- Removed forks -->
    <remove-project name="SlimRoms/packages_apps_SlimCenter" />
 
-<!-- Omni repos -->
+<!-- other repos -->
   <project path="packages/apps/PerformanceControl" name="omnirom/android_packages_apps_PerformanceControl" remote="github" revision="android-4.4" />
+    <remove-project name="platform/frameworks/webview" />
+  <project name="LiquidSmooth/android_frameworks_webview" path="frameworks/webview" remote="github" revision="kitkat" />
+    <remove-project name="SlimRoms/android_external_chromium_org" />
+  <project name="LiquidSmooth/android_external_chromium_org" path="external/chromium_org" remote="github" revision="kitkat" />
+  <project path="packages/apps/LiquidWeather" name="LiquidSmooth/android_packages_apps_LiquidWeather" remote="github" revision="kitkat" />
 
   </manifest>
