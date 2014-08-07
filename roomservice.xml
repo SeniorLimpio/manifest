@@ -18,7 +18,7 @@
 
 <!-- Frameworks -->
   <remove-project name="SlimRoms/frameworks_base" />
-  <project name="frameworks_base" path="frameworks/base" remote="origin" revision="kk3" />
+  <project name="frameworks_base" path="frameworks/base" remote="origin" revision="kitkat" />
   <remove-project name="SlimRoms/frameworks_native" />
   <project name="frameworks_native" path="frameworks/native" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/frameworks_av" />
@@ -40,7 +40,7 @@
 
 <!-- Apps -->
   <remove-project name="SlimRoms/packages_apps_Settings" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="origin" revision="kk3" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="origin" revision="kitkat" />
   <remove-project name="SlimRoms/packages_apps_DSPManager" />
   <project name="packages_apps_DSPManager" path="packages/apps/DSPManager" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/packages_apps_Camera2" />
@@ -94,7 +94,7 @@
 
 <!-- External -->
   <remove-project name="SlimRoms/android_external_skia" />
-  <project name="CyanogenMod/android_external_skia" path="external/skia" remote="github" revision="cm-11.0" />
+  <project name="android_external_skia" path="external/skia" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/android_external_e2fsprogs" />
   <project name="android_external_e2fsprogs" path="external/e2fsprogs" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/android_external_llvm" />
