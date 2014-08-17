@@ -169,6 +169,5 @@
   <project name="LiquidSmooth/android_frameworks_webview" path="frameworks/webview" remote="github" revision="kitkat" />
     <remove-project name="SlimRoms/android_external_chromium_org" />
   <project name="LiquidSmooth/android_external_chromium_org" path="external/chromium_org" remote="github" revision="kitkat" />
-  <project path="packages/apps/LiquidWeather" name="LiquidSmooth/android_packages_apps_LiquidWeather" remote="github" revision="kitkat" />
 
   </manifest>
