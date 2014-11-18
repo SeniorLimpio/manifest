@@ -5,9 +5,7 @@
   <remote name="origin"
 	   fetch="https://github.com/SeniorLimpio/" />
 
-  <!-- SaberMod Toolchains -->
-  <remote name="saber"
-           fetch="https://bitbucket.org/Cl3Kener/" />
+  <remote name="bitbucket" fetch="https://bitbucket.org/"/>
 
 <!-- Device dependencies -->
   <project name="SlimRoms/hardware_samsung" path="hardware/samsung" remote="github" revision="kk4.4" />
@@ -37,6 +35,7 @@
   <project name="frameworks_opt_cards" path="frameworks/opt/cards" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/frameworks_opt_telephony" />
   <project name="LiquidSmooth/android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="github" revision="kitkat" />
+  <project path="frameworks/opt/hardware" name="CyanogenMod/android_frameworks_opt_hardware" remote="github" revision="cm-11.0" />
 
 <!-- Apps -->
   <remove-project name="SlimRoms/packages_apps_Settings" />
@@ -69,6 +68,8 @@
   <project name="packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="origin" revision="kk4.4" />
   <project name="CyanogenMod/android_packages_apps_Trebuchet" path="packages/apps/Trebuchet" remote="github" revision="cm-11.0" />
   <remove-project name="platform/packages/apps/Launcher3" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+  <project name="android_packages_apps_PackageInstaller" path="packages/apps/PackageInstaller" remote="origin" revision="cm-11.0" />
 
 <!-- Services -->
   <remove-project name="SlimRoms/packages_services_Telephony" />
@@ -93,6 +94,10 @@
   <project name="hardware_qcom_media" path="hardware/qcom/media" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/android_external_stagefright-plugins" />
   <project path="external/stagefright-plugins" name="CyanogenMod/android_external_stagefright-plugins" remote="github" revision="cm-11.0" />
+  <remove-project name="SlimRoms/hardware_samsung" />
+  <project path="hardware/samsung" name="temasek/android_hardware_samsung" remote="github" revision="cm-11.0" />
+  <remove-project name="SlimRoms/hardware_libhardware_legacy" />
+  <project path="hardware/libhardware_legacy" name="CyanogenMod/android_hardware_libhardware_legacy" remote="github" revision="cm-11.0" />
 
 <!-- External -->
   <remove-project name="SlimRoms/android_external_skia" />
@@ -123,7 +128,7 @@
   <project name="android_external_dnsmasq" path="external/dnsmasq" remote="origin" revision="cm-11.0" />
 
 <!-- Platform -->
-  <remove-project name="SlimRoms/platform_libcore" />
+  <remove-project name="SlimRoms/android_libcore" />
   <project name="platform_libcore" path="libcore" remote="origin" revision="kk4.4" />
   <remove-project name="SlimRoms/android_art" />
   <project name="android_art" path="art" remote="origin" revision="kk4.4" />
@@ -150,6 +155,9 @@
 <!-- 4.8 -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sm" name="UBERUTILS/arm-eabi-4.8" remote="github" revision="master" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.8-sm" name="UBERUTILS/arm-linux-androideabi-4.8" remote="github" revision="master" />
+
+  <project name="SeniorLimpio/sm-arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8-sl" remote="bitbucket" revision="master" />
+  <project name="SeniorLimpio/sm-arm-androideabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-androideabi-4.8-sl" remote="bitbucket" revision="master" />
 
 <!-- 4.9 -->
   <project path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.9-sm" name="UBERUTILS/arm-eabi-4.9" remote="github" revision="master" />
